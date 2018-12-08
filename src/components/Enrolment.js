@@ -27,7 +27,7 @@ class EnrolPage extends React.Component {
                   </TableHead>
                   <TableBody>
                     <tr>
-                      <td>Nursery & Primary</td>
+                      <td><h4>Nursery & Primary</h4></td>
                       <td>
                           <button type="button" className="btn btn-info waves-effect waves-light">
                               <a  className="white-text" href = {Nursery} target = "_blank" rel="noopener noreferrer">
@@ -37,7 +37,7 @@ class EnrolPage extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <td>Comprehensive College</td>
+                      <td><h4>Comprehensive College</h4></td>
                       <td>
                           <button type="button" className="btn btn-info waves-effect waves-light">
                               <a  className="white-text" href = {College} target = "_blank" rel="noopener noreferrer">
@@ -47,7 +47,7 @@ class EnrolPage extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <td>Islamic Institute</td>
+                      <td><h4>Islamic Institute</h4></td>
                       <td>
                           <button type="button" className="btn btn-info waves-effect waves-light">
                               <a  className="white-text" href = {Institute} target = "_blank" rel="noopener noreferrer">
@@ -62,6 +62,22 @@ class EnrolPage extends React.Component {
                 <br/>
               <h2 className="h1-responsive font-weight-bold text-center my-5">SCHOOL ACCOUNT NUMBER</h2>
               <p className="text-center"></p>
+              <Table>
+                  <TableHead>
+                    <tr>
+                      <th>ACCOUNT NAME</th>
+                      <th>#</th>
+                      <th>BANK</th>
+                    </tr>
+                  </TableHead>
+                  <TableBody>
+                    <tr>
+                      <td><strong><h3>Islamic Comprehensive College Ede</h3></strong></td>
+                      <td><strong><h3>2032897311</h3></strong></td>
+                      <td><strong><h3>First Bank</h3></strong></td>
+                    </tr>
+                  </TableBody>
+                </Table>
               <br/>
           </section>
         </Container>

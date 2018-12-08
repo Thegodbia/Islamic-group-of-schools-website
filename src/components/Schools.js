@@ -20,7 +20,6 @@ class Schools extends Component {
                 <Col lg="10" md="9" size="10">
                   <h4 className="font-weight-bold">Nursery & Primary</h4>
                   <p className="grey-text">The Nursery & Primary school has a curriculum designed & enriched to achieve the primary objective of developing the child’s potential multi-dimensionally, spiritually, morally, psychologically, intellectually, physically & socially.</p>
-                  <Button color="primary" size="sm"><Link className="text-white" to="/enrol">ENROLL</Link></Button>
                 </Col>
               </Row>
             </Col>
@@ -31,7 +30,6 @@ class Schools extends Component {
                 <Col lg="10" md="9" size="10">
                   <h4 className="font-weight-bold">Comprehensive College</h4>
                   <p className="grey-text">Islamic Comprehensive College have recorded landmark of achievements with several merit awards both locally and internationally. The school have also produced doctors, lawyers, engineers, journalists, teachers, and professionals from all works of life.</p>
-                  <Button color="pink" size="sm"><Link className="text-white" to="/enrol">ENROLL</Link></Button>
                 </Col>
               </Row>
             </Col>
@@ -42,9 +40,13 @@ class Schools extends Component {
                 <Col lg="10" md="9" size="10">
                   <h4 className="font-weight-bold">Islamic Institute</h4>
                   <p className="grey-text">Islamic Institute was established, from the Madrasatul-Atfaal, in 1966, at the former Igbo Osaara and it has recorded tremendous achievements. It has several affiliation to Local and International Universities.</p>
-                  <Button color="purple" size="sm"><Link className="text-white" to="/enrol">ENROLL</Link></Button>
                 </Col>
               </Row>
+            </Col>
+            <Col lg="12" md="9" size="12" className="text-center">
+                  <h4 className="font-weight-bold"> </h4>
+                  <p className="grey-text"></p>
+                  <Button color="purple" size="lg"><Link className="text-white" to="/enrol"><h4>ENROLL TO OUR SCHOOLs</h4></Link></Button>
             </Col>
           </Row>
         </section>

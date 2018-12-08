@@ -32,8 +32,8 @@ return (
                   <hr className="hr-light my-4"/>
                   <ul className="list-inline text-center list-unstyled">
                       <li className="list-inline-item">
-                          <a href="https://www.facebook.com/islamicgroupofschool" className="p-2 fa-lg w-ic">
-                              <Fa icon="facebook"/>
+                          <a href="https://www.facebook.com/islamicgroupofschool" size="lg" className="p-2 fa-lg w-ic">
+                              <Fa icon="facebook"/> FACEBOOK
                           </a>
                       </li>
                   </ul>

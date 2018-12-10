@@ -18,7 +18,7 @@ class Testimonials extends Component {
                         <div className="card-up blue-gradient">
                         </div>
                         <div className="avatar mx-auto white">
-                            <img src="https://via.placeholder.com/150" className="rounded-circle img-fluid" alt="great school" />
+                            <img src="https://thefader-res.cloudinary.com/private_images/w_1440,c_limit,f_auto,q_auto:best/unnamed_2_p4errr/blackout-eid-black-muslims-reflections.jpg" className="rounded-circle img-fluid" alt="great school" />
                         </div>
 
                         <div className="card-body">
@@ -35,7 +35,7 @@ class Testimonials extends Component {
                         <div className="card-up blue-gradient">
                         </div>
                         <div className="avatar mx-auto white">
-                            <img src="https://via.placeholder.com/150" className="rounded-circle img-fluid" alt="audu" />
+                            <img src="https://media.istockphoto.com/photos/portrait-of-man-on-white-background-picture-id509732318?k=6&m=509732318&s=612x612&w=0&h=jsZZ58OR0CEuAz-nd6J-hM5cvAq4Tq4Qxl4_i9Ke7IE=" className="rounded-circle img-fluid" alt="audu" />
                         </div>
 
                         <div className="card-body">
@@ -52,7 +52,7 @@ class Testimonials extends Component {
                         <div className="card-up blue-gradient">
                         </div>
                         <div className="avatar mx-auto white">
-                            <img src="https://via.placeholder.com/150" className="rounded-circle img-fluid" alt="impressive"/>
+                            <img src="https://s2.r29static.com//bin/entry/fb1/720x864,80/1945147/image.jpg" className="rounded-circle img-fluid" alt="impressive"/>
                         </div>
 
                         <div className="card-body">

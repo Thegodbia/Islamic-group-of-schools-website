@@ -2,7 +2,7 @@
  * Created by Abraham Bello on 11/10/2018.
  */
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink } from 'mdbreact';
+import { Navbar, NavbarBrand, Fa, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink } from 'mdbreact';
 
 class NavbarFeatures extends Component {
     constructor(props){
@@ -24,11 +24,13 @@ class NavbarFeatures extends Component {
                     <NavbarBrand to="/">
                         <strong></strong>
                     </NavbarBrand>
+                    <NavbarNav left>
+                        <NavLink to="/">
+                            <Fa icon="bank" size="lg" className="text-white" />
+                        </NavLink>
+                    </NavbarNav>
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                     <Collapse isOpen = { this.state.collapse } navbar>
-                        <NavbarNav left>
-
-                        </NavbarNav>
                         <NavbarNav right className="justify-content-center md-pills pills-secondary">
                             <NavItem active>
                                 <NavLink to="/">HOME</NavLink>

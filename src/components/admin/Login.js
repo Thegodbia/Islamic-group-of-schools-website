@@ -2,7 +2,8 @@
  * Created by Abraham Bello on 11/24/2018.
  */
 import React, { Component } from 'react';
-import { Container, Row, Col, Input, Button, toast, ToastContainer } from 'mdbreact';
+import { ToastContainer, toast } from 'react-toastify';
+import { Container, Row, Col, Input, Button} from 'mdbreact';
 import Config from '../../config';
 
 class LoginPage extends Component  {
@@ -74,6 +75,7 @@ class LoginPage extends Component  {
                             name="password"
                             onChange={this.onChange}
                             value={this.state.password}
+                            autoComplete="off"
                         />
                       </div>
                       <div className="text-center">

@@ -55,6 +55,9 @@ return (
                 <li className="list-unstyled">
                   <Link to="/contact">Contact</Link>
                 </li>
+                <li className="list-unstyled">
+                  <Link to="/auth/login">Log In</Link>
+                </li>
               </ul>
               </Col>
             </Row>

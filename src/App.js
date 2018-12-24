@@ -14,6 +14,7 @@ import NewsPage from './components/News';
 import EnrolPage from './components/Enrolment';
 import NewsForm from './components/admin/NewsForm';
 import LoginPage from './components/admin/Login';
+import LightBox from './components/Gallery';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
                 <Route exact path="/about" component={AboutPage} />
                 <Route exact path="/news" component={NewsPage} />
                 <Route exact path="/enrol" component={EnrolPage} />
+                <Route exact path="/gallery" component={LightBox} />
                 <Route exact path="/admin/news-form" component={NewsForm} />
                 <Route exact path="/auth/login" component={LoginPage} />
                 <FooterPage/>

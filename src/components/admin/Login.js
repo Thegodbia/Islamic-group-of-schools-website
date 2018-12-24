@@ -4,21 +4,20 @@
 import React, { Component } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { Container, Row, Col, Input, Button} from 'mdbreact';
-import Config from '../../config';
+//import Config from '../../config';
+import axios from 'axios';
+import { AsyncStorage } from 'AsyncStorage';
 
 class LoginPage extends Component  {
     constructor(props){
         super(props)
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            user: {}
         }
         this.onChange  = this.onChange.bind(this);
         this.onSubmit  = this.onSubmit.bind(this);
-    }
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
     }
 
     onChange(e){
@@ -27,20 +26,26 @@ class LoginPage extends Component  {
         })
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+
+    }
+
     onSubmit(e){
         e.preventDefault();
-        e.target.className += ' was-validated';
-        const auth = {
-                username: this.state.username,
+        const user = {
+                identifier: this.state.username,
                 password: this.state.password
             }
-        if(auth.username || auth.password === ""){
+        if(user.identifier === "" || user.password === ""){
             toast.error("Kindly provide correct credentials, thank you!",
                         {position: "top-right"
                         }
             )
         }
-        if(auth.username === Config.username && auth.password === Config.password){
+
+        if(user.identifier && user.password !== ""){
+ /*       if(auth.username === Config.username && auth.password === Config.password){
             localStorage.setItem('auth', JSON.stringify(auth));
             toast.success("logged in successfully",
                 {
@@ -48,7 +53,33 @@ class LoginPage extends Component  {
                 }
             )
             this.props.history.push('/news');
-        }
+        }*/
+        axios
+            .post('http://localhost:1337/auth/local', user)
+            .then(response => {
+            // Handle success.
+            console.log('Well done!');
+            console.log('User profile', response.data.user);
+            console.log('User token', response.data.jwt);
+                AsyncStorage.setItem('auth', response.data);
+                if(response){
+                     toast.success("logged in successfully",
+                {
+                    position: "top-right"
+                }
+                )
+                }
+                this.props.history.push('/news');
+            })
+            .catch(error => {
+            // Handle error.
+            console.log('An error occurred:', error);
+            });
+    }
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
     }
 
   render() {
@@ -61,7 +92,7 @@ class LoginPage extends Component  {
                   <form>
                       <div className="grey-text">
                         <Input
-                            label="Type your email"
+                            label="Type your username"
                             icon="envelope"
                             group type="text"
                             name="username"
@@ -82,9 +113,9 @@ class LoginPage extends Component  {
                         <Button className="indigo" type="submit" onClick={this.onSubmit}>Login</Button>
                       </div>
                       <ToastContainer
-                          hideProgressBar={true}
+                          hideProgressBar={false}
                           newestOnTop={true}
-                          autoClose={15000}
+                          autoClose={5000}
                       />
                   </form>
               </Col>

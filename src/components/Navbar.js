@@ -39,6 +39,9 @@ class NavbarFeatures extends Component {
                                   <NavLink to="/about">ABOUT US</NavLink>
                               </NavItem>
                               <NavItem>
+                                  <NavLink to="/gallery">GALLERY</NavLink>
+                              </NavItem>
+                              <NavItem>
                                   <NavLink to="/news">NEWS</NavLink>
                               </NavItem>
                               <NavItem>

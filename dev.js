@@ -6,5 +6,6 @@
 module.exports = {
     SMTP_LOGIN: 'ibrahimbaello@gmail.com',
     SMTP_PASSW: 'ibrahim01',
-    TEST_RECIPIENT:'belloabraham@yahoo.com'
+    TEST_RECIPIENT:'belloabraham@yahoo.com',
+    secretOrkey: 'gsfsatsyatsjahasg'
 };

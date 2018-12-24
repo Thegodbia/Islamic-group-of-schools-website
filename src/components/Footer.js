@@ -47,6 +47,9 @@ return (
                   <Link to="/about">About Us</Link>
                 </li>
                 <li className="list-unstyled">
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li className="list-unstyled">
                   <Link to="/news">News</Link>
                 </li>
                 <li className="list-unstyled">

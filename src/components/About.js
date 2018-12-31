@@ -17,7 +17,7 @@ class AboutPage extends Component {
           <div className="card">
             <Row>
               <Col lg="8">
-                <div className="card-body">
+                <div className="card-body ">
                     <p className="w-responsive mx-auto pb-5">Islamic Group of school is a product of vision aimed to provide Muslim community with the right mix of Islamic &amp; western education to the highest international standard.
                         Founded by Sheikh Salahudeen Ade Olayiwola, the three schools operate under three different heads but all with the same management team that is carefully selected from the different part of the country.
                     </p>

@@ -40,7 +40,7 @@ class Testimonials extends Component {
 
                         <div className="card-body">
                             <h4 className="mt-1">
-                                <strong>Alhaji O. Habib</strong>
+                                <strong>Alhaji O. Quadri</strong>
                             </h4>
                             <hr/>
                             <p className="dark-grey-text">I feel so blessed every day that my kids attend the Islamic Group of Schools. You have managed to do what I assumed could not be done in a school</p>

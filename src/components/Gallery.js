@@ -9,6 +9,21 @@ import image2 from '../img/IMG-2.jpg';
 import image3 from '../img/IMG-3.jpg';
 import image4 from '../img/IMG-4.jpg';
 import image5 from '../img/IMG-5.jpg';
+import image22 from '../img/IMG-22.jpg';
+import image23 from '../img/IMG-23.jpg';
+import image24 from '../img/IMG-24.jpg';
+import image25 from '../img/IMG-25.jpg';
+import image26 from '../img/IMG-26.jpg';
+import image27 from '../img/IMG-27.jpg';
+import image28 from '../img/IMG-28.jpg';
+import image29 from '../img/IMG-29.jpg';
+import image30 from '../img/IMG-30.jpg';
+import image31 from '../img/IMG-31.jpg';
+import image32 from '../img/IMG-32.jpg';
+
+
+
+
 
 
 class LightBox extends Component {
@@ -20,7 +35,18 @@ state = {
     image2,
     image3,
     image4,
-    image5
+    image5,
+      image22,
+      image23,
+      image24,
+      image25,
+      image26,
+      image27,
+      image28,
+      image29,
+      image30,
+      image31,
+      image32
   ]
 }
 

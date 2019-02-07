@@ -20,7 +20,7 @@ export default class Jumbo extends Component {
                     <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
                       <h1 className="h1-responsive font-weight-bold mt-sm-5">ISLAMIC GROUP OF SCHOOLS, EDE </h1>
                       <hr className="hr-light"/>
-                      <h4 className="mb-4">...Read in the name of the Lord!</h4>
+                      <h4 className="mb-4">...Read in the name of thy Lord!</h4>
                     </div>
                     <Col md="6" xl="5" className="mt-xl-5 text-center">
                       <img src={require('../igs.png')} className="img-fluid" alt="school logo" />

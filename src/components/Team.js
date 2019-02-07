@@ -18,7 +18,7 @@ import image17 from '../img/IMG-17.jpg';
 import image18 from '../img/IMG-18.jpg';
 import image19 from '../img/IMG-19.jpg';
 import image20 from '../img/IMG-20.jpg';
-import image21 from '../img/IMG-21.jpg';
+import image33 from '../img/IMG-33.jpg';
 
 
 
@@ -108,9 +108,9 @@ class TeamPage extends Component {
                             </ul>
                         </Col>
                         <Col lg="3" md="6"  className="mb-lg-0 mb-5 text-center mx-auto">
-                            <img src={image21} className="avatar rounded-circle z-depth-1 img-fluid" alt="Alhaji Khidir Yahya"/>
-                            <h5 className="font-weight-bold mt-4 mb-3">Alhaji Khidir Yahya</h5>
-                            <p className="text-uppercase blue-text">Member BOG</p>
+                            <img src={image33} className="avatar rounded-circle z-depth-1 img-fluid" alt="Alhaji Khidir Yahya"/>
+                            <h5 className="font-weight-bold mt-4 mb-3">Mrs. Raji S.A.</h5>
+                            <p className="text-uppercase blue-text">VP Academic/Board Member</p>
                             <ul className="list-unstyled mb-0">
                             </ul>
                         </Col>
